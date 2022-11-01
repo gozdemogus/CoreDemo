@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    internal class EFCategoryRepository:GenericRepository<Category>,ICategoryDal
+    public class EFCategoryRepository:GenericRepository<Category>,ICategoryDal
     {
     }
 }
