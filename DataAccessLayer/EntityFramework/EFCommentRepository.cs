@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    internal class EFCommentRepository:GenericRepository<Comment>,ICommentDal
+    public class EFCommentRepository:GenericRepository<Comment>,ICommentDal
     {
     }
 }
