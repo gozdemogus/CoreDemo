@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Shared\Components\CommentList\**" />
+    <Content Remove="Views\Shared\Components\CommentList\**" />
+    <EmbeddedResource Remove="Views\Shared\Components\CommentList\**" />
+    <None Remove="Views\Shared\Components\CommentList\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ViewComponents\CommentList.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.7">
       <PrivateAssets>all</PrivateAssets>
@@ -22,10 +33,6 @@
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj" />
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Shared\Components\CommentListByBlog\" />
   </ItemGroup>
 
 </Project>
