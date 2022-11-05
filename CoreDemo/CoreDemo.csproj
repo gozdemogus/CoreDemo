@@ -16,6 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\weberror\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\weberror\fonts\fontawesome-webfont.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.2.2" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.7" />

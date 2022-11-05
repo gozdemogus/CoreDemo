@@ -23,5 +23,9 @@ namespace EntityLayer.Concrete
 
         //bir bloga birden fazla yorum yazılabilir
         public List<Comment> Comments { get; set; }
+
+        public int WriterID { get; set; }
+        public Writer Writer { get; set; }
+
     }
 }
