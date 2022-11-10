@@ -76,7 +76,7 @@ namespace CoreDemo.Controllers
 
         public IActionResult DeleteBlog(int id)
         {
-            var blogvalue = bm.GetById(id);
+            var blogvalue = bm.TGetById(id);
             bm.TDelete(blogvalue);
             return RedirectToAction("BlogListByWriter");
         }
@@ -91,7 +91,7 @@ namespace CoreDemo.Controllers
                                                        Value = x.CategoryID.ToString()
                                                    }).ToList();
             ViewBag.cv = categoryvalues;
-            var blogvalue=bm.GetById(id);   
+            var blogvalue=bm.TGetById(id);   
             return View(blogvalue);
         }
 
