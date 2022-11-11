@@ -47,5 +47,10 @@ namespace BusinessLayer.Concrete
         {
             throw new NotImplementedException();
         }
+
+        List<Message2> IMessageService.GetInboxListByWriter(string p)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
