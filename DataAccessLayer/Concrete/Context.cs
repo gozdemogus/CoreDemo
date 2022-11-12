@@ -13,7 +13,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=localhost; database=CoreBlogDB; integrated security=true;");
+            optionsBuilder.UseSqlServer("Server=tcp:127.0.0.1,1433;Database=master;MultipleActiveResultSets=true;User=SA;Password=MyPass@word;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
