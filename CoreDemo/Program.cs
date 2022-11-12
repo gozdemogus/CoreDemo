@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
@@ -14,6 +16,11 @@ namespace CoreDemo
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+
+         /*   var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddRazorPages()
+                .AddRazorRuntimeCompilation();*/
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
