@@ -7,7 +7,6 @@ namespace CoreDemo.Controllers
 {
     public class DashboardController : Controller
     {
-        [AllowAnonymous]
         public IActionResult Index()
         {
             Context c = new Context();
@@ -16,5 +15,7 @@ namespace CoreDemo.Controllers
             ViewBag.v3 = c.Categories.Count();
             return View();
         }
+
+
     }
 }

@@ -34,7 +34,7 @@ namespace CoreDemo.Controllers
                 var useridentity=new ClaimsIdentity(claims,"a");    
                 ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(useridentity);
                 await HttpContext.SignInAsync(claimsPrincipal);
-                return RedirectToAction("Index", "Writer");
+                return RedirectToAction("Index", "Dashboard");
             }
             else
             {
