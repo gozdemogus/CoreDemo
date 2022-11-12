@@ -17,7 +17,7 @@ namespace DataAccessLayer.EntityFramework
         {
           using (var c=new Context())
             {
-                return c.Message2s.Include(x=>x.ReceiverUser).Where(x=>x.Receiver== id).ToList();
+                return c.Message2s.Include(x=>x.SenderUser).Where(x=>x.Receiver== id).ToList();
             }
         }
     }
