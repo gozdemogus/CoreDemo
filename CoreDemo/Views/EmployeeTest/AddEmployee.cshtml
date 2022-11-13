@@ -1,0 +1,13 @@
+﻿@using CoreDemo.Controllers
+@model Class1
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <label>Name</label>
+    <input type="text" asp-for="@Model.Name" class="form-control" />
+    <br />
+    <button type="submit" class="btn btn-info">Add</button>
+</form>
