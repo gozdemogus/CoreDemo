@@ -15,7 +15,6 @@ namespace CoreDemo.ViewComponents.Writer
 
         WriterManager wm = new WriterManager(new EFWriterRepository());
 
-   
 
         public IViewComponentResult Invoke()
         {
