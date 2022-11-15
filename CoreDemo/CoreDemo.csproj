@@ -37,6 +37,7 @@
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Microsoft.AspNetCore.Identity" />
     <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <None Remove="Views\RegisterUser\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -175,6 +176,7 @@
     <Folder Include="Areas\Admin\Views\Chart\" />
     <Folder Include="Areas\Admin\Views\Writer\" />
     <Folder Include="Views\EmployeeTest\" />
+    <Folder Include="Views\RegisterUser\" />
   </ItemGroup>
 
 </Project>
