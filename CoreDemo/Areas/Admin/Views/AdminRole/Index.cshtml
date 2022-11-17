@@ -1,0 +1,62 @@
+﻿@using EntityLayer.Concrete
+@model List<AppRole>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<html>
+<body>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox">
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up">
+
+                            </i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+
+                    <table class="table table-hover">
+                        <tr>
+                            <th>#</th>
+                            <th>Heading</th>
+
+                            <th>Delete</th>
+                            <th>Update</th>
+                        </tr>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Name</td>
+
+                                <td><a href="#" class="btn btn-danger">Delete</a></td>
+                                <td><a href="#" class="btn btn-primary">Update</a></td>
+                            </tr>
+                        }
+                    </table>
+                    <a href="/Admin/AdminRole/AddRole" class="btn btn-outline-primary">New Role</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
