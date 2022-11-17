@@ -38,6 +38,7 @@
     <None Remove="Microsoft.AspNetCore.Identity" />
     <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
     <None Remove="Views\RegisterUser\" />
+    <None Remove="Areas\Admin\Views\AdminMessage\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -177,6 +178,7 @@
     <Folder Include="Areas\Admin\Views\Writer\" />
     <Folder Include="Views\EmployeeTest\" />
     <Folder Include="Views\RegisterUser\" />
+    <Folder Include="Areas\Admin\Views\AdminMessage\" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,26 @@
+﻿@model EntityLayer.Concrete.Message2
+
+@{
+    ViewData["Title"] = "InBox";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>BlogAdd</h1>
+
+@using (Html.BeginForm("SendMessage", "Message", FormMethod.Post))
+{
+    @Html.Label("Receiver")
+    <input type="text" class="form-control" />
+    <br />
+
+    @Html.Label("Subject")
+    @Html.TextBoxFor(x => x.Subject, new { @class = "form-control" })
+    <br />
+
+    @Html.Label(" Content")
+    @Html.TextAreaFor(x => x.MessageDetails, 10, 3, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-info">Save</button>
+
+    }
